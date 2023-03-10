@@ -6,6 +6,17 @@ In this Benchmarking test i've been running FIO with write Operation on Cloudlab
 ioengine = psync
 runtime = 60 
 rw = write
+ioengine = psync
+runtime = 60 
+rw = read
+numjobs = n(1,16,32)
+threads = n(1,16,32)
+time_based = 1
+group_reporting 
+per_job_logs=0 
+direct=1 
+thread
+size=1G 
 ```
 # Result
 
@@ -84,4 +95,4 @@ y-axis = Shows the KIOPS data changes every second<br>
 <br><br>
 
 # Summary 
-From this configuration we can summary that if we increase both of varible it will give consistentcy performance but at the early it always get low performance. Meanwhile i've been create data that compare KIOPS performance in every configuration.
+From the result above we can conclude that the higher threads and numjobs, the greatest performance we can get, but its need to be balanced with the basesize. We can also noticed that the performance is actually good but sometimes it give us a drop perfomance.
