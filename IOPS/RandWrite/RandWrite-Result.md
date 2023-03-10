@@ -76,7 +76,7 @@ y-axis = Shows the KIOPS data changes every second<br>
 <br><br>
 
 # Summary 
-From what i've been observed KIOPS will increase significantly when numjobs and threads on the right number, but if both of variable get higher number it will get consistent performance of KIOPS, but different than randread operation the performance drop not significantly as we can see in randread operation. Meanwhile i've been create data that compare KIOPS performance in every result 
+From what i've been observed KIOPS will increase significantly when numjobs and threads on the right number, but if both of variable get higher number it will get consistent performance of KIOPS, but different than randread operation the performance drop not significantly as we can see in randread operation. Meanwhile i've been create data that compare KIOPS performance in every configuration.
 
 <img src="https://res.cloudinary.com/dkcur9nvf/image/upload/v1678453446/Research/RandWrite/rand-write-data_hv0sqw.jpg" alt="randwrite-data" width="600"/>
 <br>
